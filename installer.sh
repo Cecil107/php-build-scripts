@@ -25,5 +25,6 @@ read -e -p "system> Number (e.g. 1): " a </dev/tty
         rm -rf install.sh >>./$lp 2>>./$lpe
         ./MacOS64.sh >>./$lp 2>>./$lpe
         exit 1>>./$lp 2>>./$lpe
+        fi
 exit 0
 done
