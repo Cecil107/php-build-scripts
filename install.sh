@@ -126,3 +126,4 @@ fi
 # fi
 rm -rf install.sh
 exit 0
+done
