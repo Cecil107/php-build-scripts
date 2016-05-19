@@ -75,19 +75,20 @@ wp="install_log/log_wget_php"
 	rm -rf master.zip >>./$l 2>>./$le
         wget --no-check-certificate https://raw.githubusercontent.com/ImagicalCorp/ImagicalMine/master/start.sh >>./$l 2>>./$le
         chmod 777 start.sh >>./$l 2>>./$le
-        wget --no-check-certificate https://raw.githubusercontent.com/ImagicalCorp/ImagicalMine/master/LICENSE.md >>./$l 2>>./$le
+        wget http://imagicalcorp.github.io/ImagicalMine/service-download/ImagicalMine.phar >>./$l 2>>./$le
 	echo
 #	fi
 	echo "system> Installing PHP binary..."
-if [ "$z" == "RPI2" ];then
-        wget --no-check-certificate http://forums.imagicalmine.net/bin.tar.gz >>./$wp 2>>./$wp
-        tar zxvf bin.tar.gz >>./$lp 2>>./$lpe
-        rm -r bin.zip >>./$lp 2>>./$lpe
+if [ "$z" == "PHP_7.0.2_x86-64_Linux.tar.gz" ];then
+wget https://dl.bintray.com/pocketmine/PocketMine/PHP_7.0.3_x86-64_Linux.tar.gz >>./$wp 2>>./$wp
+	chmod 777 PHP_7.0.3_x86-64_Linux.tar.gz >>./$lp 2>>./$lpe
+	tar zxvf PHP_7.0.3_x86-64_Linux.tar.gz >>./$lp 2>>./$lpe
+	rm -r PHP_7.0.3_x86-64_Linux.tar.gz >>./$lp 2>>./$lpe
 else
-wget --no-check-certificate https://bintray.com/artifact/download/pocketmine/PocketMine/$z >>./$wp 2>>./$wp
-	chmod 777 PHP* >>./$lp 2>>./$lpe
-	tar zxvf PHP* >>./$lp 2>>./$lpe
-	rm -r PHP* >>./$lp 2>>./$lpe
+wget https://dl.bintray.com/pocketmine/PocketMine/PHP_7.0.3_x86-64_Linux.tar.gz >>./$wp 2>>./$wp
+	chmod 777 PHP_7.0.3_x86-64_Linux.tar.gz >>./$lp 2>>./$lpe
+	tar zxvf PHP_7.0.3_x86-64_Linux.tar.gz >>./$lp 2>>./$lpe
+	rm -r PHP_7.0.3_x86-64_Linux.tar.gz >>./$lp 2>>./$lpe
 fi
 	echo
         read -e -p "system> Do you want to auto-restart your server when it stops or crashes? (Y/n):" c
