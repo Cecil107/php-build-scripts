@@ -85,6 +85,7 @@ wget https://dl.bintray.com/pocketmine/PocketMine/PHP_7.0.3_x86-64_Linux.tar.gz 
 	chmod 777 PHP_7.0.3_x86-64_Linux.tar.gz >>./$lp 2>>./$lpe
 	tar zxvf PHP_7.0.3_x86-64_Linux.tar.gz >>./$lp 2>>./$lpe
 	rm -r PHP_7.0.3_x86-64_Linux.tar.gz >>./$lp 2>>./$lpe
+	
 if [ "$z" == "PHP_7.0.2_x86-64_MacOS.tar.gz" ];then
 wget https://dl.bintray.com/pocketmine/PocketMine/PHP_7.0.3_x86-64_MacOS.tar.gz >>./$wp 2>>./$wp
 	chmod 777 PHP_7.0.3_x86-64_MacOS.tar.gz >>./$lp 2>>./$lpe
@@ -95,6 +96,7 @@ wget https://dl.bintray.com/pocketmine/PocketMine/PHP_7.0.3_x86-64_MacOS.tar.gz 
 	chmod 777 PHP_7.0.3_x86-64_MacOS.tar.gz >>./$lp 2>>./$lpe
 	tar zxvf PHP_7.0.3_x86-64_MacOS.tar.gz >>./$lp 2>>./$lpe
 	rm -r PHP_7.0.3_x86-64_MacOS.tar.gz >>./$lp 2>>./$lpe
+	
 if [ "$z" == "PHP_7.0.2_x86_Linux.tar.gz" ];then
 wget https://dl.bintray.com/pocketmine/PocketMine/PHP_7.0.3_x86-64_MacOS.tar.gz >>./$wp 2>>./$wp
 	chmod 777 PHP_7.0.3_x86_Linux.tar.gz >>./$lp 2>>./$lpe
