@@ -32,7 +32,6 @@ echo
 echo "system> Select which PHP binary you want to install:"
 echo "system>   1) Linux x64(64-bit)"
 echo "system>   2) Exit ImagicalMine installation"
-read -e -p "system> Number (e.g. 1): " a
 read -e -p "system> Number (e.g. 1): " a </dev/tty
  case "$a" in 
 	1 ) z="PHP_7.0.2_x86-64_Linux.tar.gz";;
