@@ -18,8 +18,8 @@ read -e -p "system> Number (e.g. 1): " a </dev/tty
         rm -rf install.sh >>./$lp 2>>./$lpe
         ./Linux.sh >>./$lp 2>>./$lpe
         exit 1>>./$lp 2>>./$lpe
- else
-  if [ "$z" == "MacOS" ];then
+ elseif
+  [ "$z" == "MacOS" ];then
   wget https://raw.githubusercontent.com/Cecil107/php-build-scripts/master/MacOS64.sh >>./$wp 2>>./$wp
         chmod 777 MacOS64.sh >>./$lp 2>>./$lpe
         rm -rf install.sh >>./$lp 2>>./$lpe
