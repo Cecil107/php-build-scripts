@@ -54,12 +54,12 @@ if  [ "$z" == "MacOS" ];then
 wget https://github.com/Cecil107/php-build-scripts/raw/master/MacOS64 >>./$wp 2>>./$wp
 	chmod 777 MacOS64.sh >>./$lp 2>>./$lpe
 	rm -r installer.sh >>./$lp 2>>./$lpe
-	./MacOS64.sh >>./$lp 2>>./$lpe
+echo "system>   Do MacOS64.sh" >>./$lp 2>>./$lpe
 elif [ "$z" == "Linux" ];then
 wget https://github.com/Cecil107/php-build-scripts/blob/master/Linux64.sh >>./$wp 2>>./$wp
 	chmod 777 Linux64.sh >>./$lp 2>>./$lpe
 	rm -r installer.sh >>./$lp 2>>./$lpe
-	./Linux64.sh >>./$lp 2>>./$lpe
+echo "system>   Do Linux64.sh" >>./$lp 2>>./$lpe
 fi
 #        shopt -u extglob
 # fi
